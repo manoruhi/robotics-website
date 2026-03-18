@@ -1,0 +1,79 @@
+.learning-engine {
+  padding: 4rem 2rem;
+  background: #f8fafc;
+}
+
+.learning-engine-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.learning-engine .section-title {
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  font-weight: 700;
+  color: #1a1a2e;
+  text-align: center;
+  margin: 0 0 0.75rem;
+}
+
+.learning-engine .section-subtitle {
+  text-align: center;
+  color: #64748b;
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto 3rem;
+  line-height: 1.6;
+}
+
+.learning-engine-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.learning-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.learning-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(13, 71, 161, 0.12);
+}
+
+.learning-card-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.learning-card h3 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #1a1a2e;
+  margin: 0 0 0.5rem;
+}
+
+.learning-card p {
+  font-size: 0.9rem;
+  color: #64748b;
+  margin: 0;
+  line-height: 1.5;
+}
+
+@media (max-width: 900px) {
+  .learning-engine-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .learning-engine {
+    padding: 3rem 1.25rem;
+  }
+  .learning-engine-grid {
+    grid-template-columns: 1fr;
+  }
+}

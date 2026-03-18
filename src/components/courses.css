@@ -1,0 +1,129 @@
+.courses {
+  padding: 1rem 0.5rem;
+  background: #f8fafc;
+}
+
+.courses-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.courses .section-title {
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  font-weight: 700;
+  color: #1a1a2e;
+  text-align: center;
+  margin: 0 0 0.75rem;
+}
+
+.courses .section-subtitle {
+  text-align: center;
+  color: #64748b;
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto 3rem;
+  line-height: 1.6;
+}
+
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.course-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s, box-shadow 0.2s;
+  border: 1px solid #e2e8f0;
+}
+
+.course-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(13, 71, 161, 0.12);
+}
+
+.course-card-image {
+  height: 180px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.course-card-content {
+  padding: 1.5rem;
+}
+
+.course-card-content h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #1a1a2e;
+  margin: 0 0 0.5rem;
+}
+
+.course-card-content p {
+  font-size: 0.9rem;
+  color: #64748b;
+  margin: 0 0 1rem;
+  line-height: 1.5;
+}
+
+.course-card-content .btn {
+  display: inline-block;
+  padding: 0.5rem 1.25rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+  background: #1565c0;
+  color: #fff;
+  border: 2px solid #1565c0;
+  transition: background 0.2s, border-color 0.2s;
+  font-family: inherit;
+}
+
+.course-card-content .btn:hover {
+  background: #0d47a1;
+  border-color: #0d47a1;
+  color: #fff;
+}
+
+.courses-cta {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.btn-outline-courses {
+  display: inline-block;
+  padding: 0.6rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+  color: #1565c0;
+  border: 2px solid #1565c0;
+  transition: background 0.2s, color 0.2s;
+  font-family: inherit;
+}
+
+.btn-outline-courses:hover {
+  background: #1565c0;
+  color: #fff;
+}
+
+@media (max-width: 900px) {
+  .courses-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .courses {
+    padding: 3rem 1.25rem;
+  }
+  .courses-grid {
+    grid-template-columns: 1fr;
+  }
+}
