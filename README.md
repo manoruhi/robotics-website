@@ -1,6 +1,5 @@
-# STEMCITY® – React Website
+# ROBOEYES® – React Website
 
-React project inspired by [stemcity.in](https://stemcity.in/) – “Changing the way of learning.”
 
 ## Navbar
 
@@ -14,7 +13,7 @@ React project inspired by [stemcity.in](https://stemcity.in/) – “Changing th
 
 ## Footer
 
-- Brand (STEMCITY®), tagline, social links
+- Brand (ROBOEYES®), tagline, social links
 - Quick Links, Products, Contact
 - Copyright and legal links (Privacy, Terms, Cookie Policy)
 
